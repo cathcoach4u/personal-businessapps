@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Apps Hub</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Apps Hub">
+<meta name="theme-color" content="#1e293b">
+<link rel="apple-touch-icon" href="icon-192.svg">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#f1f5f9;min-height:100vh;-webkit-font-smoothing:antialiased}
+.top-bar{background:#1e293b;padding:calc(env(safe-area-inset-top,0px) + 12px) 16px 12px;text-align:center}
+.top-bar h1{color:#fff;font-size:20px;font-weight:700}
+.container{max-width:480px;margin:0 auto;padding:16px}
+.section-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#94a3b8;margin:18px 0 8px;padding-left:4px}
+.section-label:first-child{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media(max-width:340px){.grid{grid-template-columns:repeat(2,1fr)}}
+.tile{display:flex;flex-direction:column;align-items:center;background:#fff;border-radius:14px;padding:14px 6px 10px;text-decoration:none;box-shadow:0 1px 3px rgba(0,0,0,0.08);transition:transform 0.12s,box-shadow 0.12s}
+.tile:active{transform:scale(0.96);box-shadow:0 1px 2px rgba(0,0,0,0.06)}
+.tile.faded{opacity:0.6}
+.tile-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:6px;overflow:hidden;flex-shrink:0}
+.tile-icon svg{width:48px;height:48px;border-radius:12px}
+.tile-icon.navy{background:linear-gradient(135deg,#003366,#004d99);color:#fff;font-weight:700;font-size:16px}
+.tile-icon.navy.small-text{font-size:12px}
+.tile-name{font-size:12px;font-weight:600;color:#1e293b;text-align:center;line-height:1.2;margin-bottom:4px}
+.tag{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:2px 6px;border-radius:4px}
+.tag-pwa{background:#dbeafe;color:#2563eb}
+.tag-web{background:#f1f5f9;color:#64748b}
+.tag-link{background:#fef3c7;color:#d97706}
+footer{text-align:center;padding:24px 16px;font-size:11px;color:#94a3b8}
+</style>
+</head>
+<body>
+<div class="top-bar"><h1>Apps Hub</h1></div>
+<div class="container">
+
+<div class="section-label">Personal Hubs</div>
+<div class="grid">
+  <a class="tile" href="https://cathcoach4u.github.io/personal-baker-hub/">
+    <div class="tile-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192"><rect width="192" height="192" rx="42" fill="#0d9488"/><text x="96" y="130" text-anchor="middle" font-family="'Segoe UI',system-ui,-apple-system,sans-serif" font-size="120" font-weight="700" fill="white">B</text></svg>
+    </div>
+    <div class="tile-name">Baker Hub</div>
+    <span class="tag tag-pwa">PWA</span>
+  </a>
+  <a class="tile" href="https://cathcoach4u.github.io/personal-cath-hub/">
+    <div class="tile-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192"><rect width="192" height="192" rx="42" fill="#0d9488"/><text x="96" y="130" text-anchor="middle" font-family="'Segoe UI',system-ui,-apple-system,sans-serif" font-size="120" font-weight="700" fill="white">C</text></svg>
+    </div>
+    <div class="tile-name">Cath Hub</div>
+    <span class="tag tag-pwa">PWA</span>
+  </a>
+</div>
+
+<div class="section-label">Coach4U Clients</div>
+<div class="grid">
+  <a class="tile" href="https://cathcoach4u.github.io/client_IAS/">
+    <div class="tile-icon navy">I</div>
+    <div class="tile-name">IAS</div>
+    <span class="tag tag-pwa">PWA</span>
+  </a>
+</div>
+
+<div class="section-label">Coach4U Internal</div>
+<div class="grid">
+  <a class="tile" href="https://cathcoach4u.github.io/internal-coach4u-hub/">
+    <div class="tile-icon navy small-text">C4U</div>
+    <div class="tile-name">Coach4U Hub</div>
+    <span class="tag tag-pwa">PWA</span>
+  </a>
+  <a class="tile faded" href="https://www.coach4u.com.au/appspersonalprofessional/coach4uhub/">
+    <div class="tile-icon navy">⚙</div>
+    <div class="tile-name">Coach4U Hub (old)</div>
+    <span class="tag tag-web">WEB</span>
+  </a>
+  <a class="tile" href="https://cathcoach4u.github.io/Internal-Resources-Training/">
+    <div class="tile-icon navy">P</div>
+    <div class="tile-name">Professional Dev</div>
+    <span class="tag tag-pwa">PWA</span>
+  </a>
+</div>
+
+<div class="section-label">Coach4U External</div>
+<div class="grid">
+  <a class="tile" href="https://cathcoach4u.github.io/external-Coach4U-resources/">
+    <div class="tile-icon navy">R</div>
+    <div class="tile-name">Resources</div>
+    <span class="tag tag-pwa">PWA</span>
+  </a>
+  <a class="tile" href="https://linktr.ee/thrivehq">
+    <div class="tile-icon navy small-text">TH</div>
+    <div class="tile-name">ThriveHQ</div>
+    <span class="tag tag-link">LINK</span>
+  </a>
+</div>
+
+</div>
+<footer>Built with the Baker Hub design system</footer>
+</body>
+</html>
