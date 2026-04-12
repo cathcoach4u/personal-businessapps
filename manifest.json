@@ -2,7 +2,7 @@
   "name": "Apps Hub",
   "short_name": "Apps Hub",
   "description": "Central hub for Baker Personal and Coach4U apps",
-  "start_url": "/apps-hub/",
+  "start_url": "/personal-businessapps/",
   "display": "standalone",
   "background_color": "#1e293b",
   "theme_color": "#1e293b",

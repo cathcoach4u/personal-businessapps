@@ -56,6 +56,34 @@ footer{text-align:center;padding:24px 16px;font-size:11px;color:#94a3b8}
     <div class="tile-name">Cath Hub</div>
     <span class="tag tag-pwa">PWA</span>
   </a>
+  <a class="tile" href="https://cathcoach4u.github.io/personal-baker-hub/ai.html">
+    <div class="tile-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192"><rect width="192" height="192" rx="42" fill="#9333ea"/><text x="96" y="130" text-anchor="middle" font-family="'Segoe UI',system-ui,-apple-system,sans-serif" font-size="120" font-weight="700" fill="white">B</text></svg>
+    </div>
+    <div class="tile-name">Baker AI</div>
+    <span class="tag tag-pwa">PWA</span>
+  </a>
+  <a class="tile" href="https://cathcoach4u.github.io/personal-cath-hub/ai.html">
+    <div class="tile-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192"><rect width="192" height="192" rx="42" fill="#9333ea"/><text x="96" y="130" text-anchor="middle" font-family="'Segoe UI',system-ui,-apple-system,sans-serif" font-size="120" font-weight="700" fill="white">C</text></svg>
+    </div>
+    <div class="tile-name">Cath AI</div>
+    <span class="tag tag-pwa">PWA</span>
+  </a>
+  <a class="tile" href="https://cathcoach4u.github.io/personal-cath-hub/morning.html">
+    <div class="tile-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192"><rect width="192" height="192" rx="42" fill="#eab308"/><text x="96" y="130" text-anchor="middle" font-family="'Segoe UI',system-ui,-apple-system,sans-serif" font-size="120" font-weight="700" fill="#1e293b">☀</text></svg>
+    </div>
+    <div class="tile-name">Morning</div>
+    <span class="tag tag-pwa">PWA</span>
+  </a>
+  <a class="tile" href="https://cathcoach4u.github.io/personal-baker-hub/shopping.html">
+    <div class="tile-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192"><rect width="192" height="192" rx="42" fill="#0ea5e9"/><text x="96" y="130" text-anchor="middle" font-family="'Segoe UI',system-ui,-apple-system,sans-serif" font-size="120" font-weight="700" fill="white">Sh</text></svg>
+    </div>
+    <div class="tile-name">AisleMate</div>
+    <span class="tag tag-pwa">PWA</span>
+  </a>
 </div>
 
 <div class="section-label">Coach4U Clients</div>
@@ -72,6 +100,11 @@ footer{text-align:center;padding:24px 16px;font-size:11px;color:#94a3b8}
   <a class="tile" href="https://cathcoach4u.github.io/internal-coach4u-hub/">
     <div class="tile-icon navy small-text">C4U</div>
     <div class="tile-name">Coach4U Hub</div>
+    <span class="tag tag-pwa">PWA</span>
+  </a>
+  <a class="tile" href="https://cathcoach4u.github.io/internal-coach4u-hub/bot.html">
+    <div class="tile-icon navy">💬</div>
+    <div class="tile-name">C4U Bot</div>
     <span class="tag tag-pwa">PWA</span>
   </a>
   <a class="tile faded" href="https://www.coach4u.com.au/appspersonalprofessional/coach4uhub/">
@@ -102,5 +135,10 @@ footer{text-align:center;padding:24px 16px;font-size:11px;color:#94a3b8}
 
 </div>
 <footer>Built with the Baker Hub design system</footer>
+<script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').catch(err => console.log('SW registration failed:', err));
+}
+</script>
 </body>
 </html>
