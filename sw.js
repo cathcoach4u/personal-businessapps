@@ -1,7 +1,8 @@
-const CACHE_NAME = 'apps-hub-v1';
+const CACHE_NAME = 'apps-hub-v2';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
+  '/family-dashboard.html',
   '/manifest.json',
   '/icon.svg',
   '/icon-192.svg',
