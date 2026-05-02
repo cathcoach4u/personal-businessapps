@@ -65,6 +65,12 @@ Separate page with family-focused layout:
 4. Tag as PWA, WEB, or LINK
 5. Push to main
 
+## Working with Claude on This Project
+- **New PWA in dashboard**: Ask if you want help, but happy to suggest things proactively
+- **Version tracking**: Always list version numbers when making changes (e.g., "Cache v3", "Dashboard v2")
+- **Push policy**: Always push to main (no feature branches)
+- **Start of session**: Confirm version numbers and list what changed
+
 ## If Moving Away From Claude
 - This is a static HTML page with no AI dependencies
 - Any developer or AI tool can edit it
