@@ -6,7 +6,7 @@
 - Australian English, no uppercase headings
 
 ## What is this
-The central launch page for all Baker family and Coach4U apps. A single page with tile links to every app, installable as a PWA on the home screen.
+The central launch page for Baker and Cath family personal apps. Single page with PWA capability. Separate Family Dashboard page available for organized access to family, Japan trip, and coaching portal apps.
 
 ## Architecture
 - **URL**: cathcoach4u.github.io/personal-businessapps/
@@ -17,34 +17,28 @@ The central launch page for all Baker family and Coach4U apps. A single page wit
 
 ## Sections & Apps
 
-### Personal Hubs
+### index.html — Personal Hubs
 | App | URL | Icon |
 |-----|-----|------|
 | Baker Hub | cathcoach4u.github.io/personal-baker-hub/ | Teal B |
-| Cath Hub | cathcoach4u.github.io/personal-cath-hub/ | Teal C |
 | Baker AI | cathcoach4u.github.io/personal-baker-hub/ai.html | Purple B |
+| AisleMate | cathcoach4u.github.io/personal-baker-hub/shopping.html | Blue Sh |
+| Cath Hub | cathcoach4u.github.io/personal-cath-hub/ | Teal C |
 | Cath AI | cathcoach4u.github.io/personal-cath-hub/ai.html | Purple C |
 | Morning | cathcoach4u.github.io/personal-cath-hub/morning.html | Yellow sun |
-| AisleMate | cathcoach4u.github.io/personal-baker-hub/shopping.html | Blue Sh |
+| Trip Planner | cathcoach4u.github.io/personal-baker-hub/japan-2026.html | Orange JP |
+| Japan AI | cathcoach4u.github.io/personal-baker-hub/japan-ai.html | Purple J |
 
-### Coach4U — Clients
-| App | URL | Icon |
-|-----|-----|------|
-| IAS | cathcoach4u.github.io/client_IAS/ | Red I |
+### family-dashboard.html
+Separate page with family-focused layout:
 
-### Coach4U — Internal
-| App | URL | Icon |
-|-----|-----|------|
-| Coach4U Hub | cathcoach4u.github.io/internal-coach4u-hub/ | Dark blue C4U |
-| C4U Bot | cathcoach4u.github.io/internal-coach4u-hub/bot.html | Chat bubble C4U |
-| Coach4U Hub (old) | coach4u.com.au/appspersonalprofessional/coach4uhub/ | Dimmed C4U |
-| Professional Dev | cathcoach4u.github.io/Internal-Resources-Training/ | Dark blue P |
+**Baker Family Priorities** — Shopping, Trip Planner, Japan AI
 
-### Coach4U — External
-| App | URL | Icon |
-|-----|-----|------|
-| Resources | cathcoach4u.github.io/external-Coach4U-resources/ | Dark blue R |
-| ThriveHQ | linktr.ee/thrivehq | Dark blue TH |
+**Family Based Apps** — Baker Hub, Baker AI
+
+**Cath Apps** — Cath Hub, Cath AI, Morning
+
+**Coaching Portal** — cathcoach4u.github.io/coach4Uapp-dashboard/ (C4U icon)
 
 ## Related Repositories
 | Repo | Purpose | CLAUDE.md |
@@ -57,9 +51,10 @@ The central launch page for all Baker family and Coach4U apps. A single page wit
 ## Key Files
 | File | Purpose |
 |------|---------|
-| index.html | The apps page (main entry point) |
+| index.html | Main apps hub page (entry point) |
+| family-dashboard.html | Family-organized dashboard (separate page) |
 | manifest.json | PWA manifest |
-| sw.js | Service worker for offline/caching |
+| sw.js | Service worker for offline/caching (v2) |
 | icon-192.svg / icon-512.svg | PWA icons |
 | CLAUDE.md | This file — project memory |
 
